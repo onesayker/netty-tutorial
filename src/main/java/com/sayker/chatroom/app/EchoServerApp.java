@@ -9,6 +9,10 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
+/**
+ * the echo server just for echo
+ * @author sayker
+ */
 public class EchoServerApp {
 
     private int port;

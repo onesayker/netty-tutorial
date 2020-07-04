@@ -10,6 +10,10 @@ import io.netty.util.concurrent.GenericFutureListener;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * Time server when receive the client request
+ * @author sayker
+ */
 public class TimeServerHandler extends ChannelInboundHandlerAdapter {
 
     @Override
