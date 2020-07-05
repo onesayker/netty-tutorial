@@ -23,6 +23,7 @@ public class TimeServerHandler extends ChannelInboundHandlerAdapter {
 
         final ChannelFuture channelFuture = ctx.writeAndFlush(timeBuf);
         channelFuture.addListener(new GenericFutureListener<Future<? super Void>>() {
+            @Override
             public void operationComplete(Future<? super Void> future) throws Exception {
                 assert  channelFuture==future;
                 //ctx.close();
